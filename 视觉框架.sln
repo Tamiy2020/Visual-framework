@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "视觉框架", "视觉框架\视觉框架.csproj", "{088C6FF4-BD3E-4194-ACE5-2881B68AB7E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HWindow_Tool", "halcon控件\HWindow_Tool.csproj", "{9BAA53FD-89B5-43E2-AC59-A27B006DEBB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{088C6FF4-BD3E-4194-ACE5-2881B68AB7E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088C6FF4-BD3E-4194-ACE5-2881B68AB7E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088C6FF4-BD3E-4194-ACE5-2881B68AB7E1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{088C6FF4-BD3E-4194-ACE5-2881B68AB7E1}.Debug|x64.Build.0 = Debug|Any CPU
+		{088C6FF4-BD3E-4194-ACE5-2881B68AB7E1}.Debug|x86.ActiveCfg = Debug|x86
+		{088C6FF4-BD3E-4194-ACE5-2881B68AB7E1}.Debug|x86.Build.0 = Debug|x86
+		{088C6FF4-BD3E-4194-ACE5-2881B68AB7E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088C6FF4-BD3E-4194-ACE5-2881B68AB7E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088C6FF4-BD3E-4194-ACE5-2881B68AB7E1}.Release|x64.ActiveCfg = Release|Any CPU
+		{088C6FF4-BD3E-4194-ACE5-2881B68AB7E1}.Release|x64.Build.0 = Release|Any CPU
+		{088C6FF4-BD3E-4194-ACE5-2881B68AB7E1}.Release|x86.ActiveCfg = Release|Any CPU
+		{088C6FF4-BD3E-4194-ACE5-2881B68AB7E1}.Release|x86.Build.0 = Release|Any CPU
+		{9BAA53FD-89B5-43E2-AC59-A27B006DEBB6}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{9BAA53FD-89B5-43E2-AC59-A27B006DEBB6}.Debug|x64.ActiveCfg = Debug|x64
+		{9BAA53FD-89B5-43E2-AC59-A27B006DEBB6}.Debug|x64.Build.0 = Debug|x64
+		{9BAA53FD-89B5-43E2-AC59-A27B006DEBB6}.Debug|x86.ActiveCfg = Debug|x86
+		{9BAA53FD-89B5-43E2-AC59-A27B006DEBB6}.Debug|x86.Build.0 = Debug|x86
+		{9BAA53FD-89B5-43E2-AC59-A27B006DEBB6}.Release|Any CPU.ActiveCfg = Release|x86
+		{9BAA53FD-89B5-43E2-AC59-A27B006DEBB6}.Release|x64.ActiveCfg = Release|x64
+		{9BAA53FD-89B5-43E2-AC59-A27B006DEBB6}.Release|x64.Build.0 = Release|x64
+		{9BAA53FD-89B5-43E2-AC59-A27B006DEBB6}.Release|x86.ActiveCfg = Release|x86
+		{9BAA53FD-89B5-43E2-AC59-A27B006DEBB6}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44B15D03-C7BE-4B99-AB2D-8FC656284F1A}
+	EndGlobalSection
+EndGlobal
