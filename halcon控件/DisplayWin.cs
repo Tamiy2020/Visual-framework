@@ -56,6 +56,15 @@ namespace ChoiceTech.Halcon.Control
         public DpWin()
         {
             InitializeComponent();
+            //使用双缓冲，让图像显示不闪烁
+            SetStyle(
+                     ControlStyles.OptimizedDoubleBuffer
+                     | ControlStyles.ResizeRedraw
+                     | ControlStyles.Selectable
+                     | ControlStyles.AllPaintingInWmPaint
+                     | ControlStyles.UserPaint
+                     | ControlStyles.SupportsTransparentBackColor,
+                     true);
             //
             viewWindow = new ViewWindow.ViewWindow(mCtrl_HWindow);
             hWindowControl = this.mCtrl_HWindow;

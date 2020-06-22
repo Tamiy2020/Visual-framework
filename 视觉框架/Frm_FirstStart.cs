@@ -78,13 +78,13 @@ namespace 视觉框架
         {
             if (regkey.GetValue("相机数量").ToString() == "1")
             {
-                form.cameraManager.listCamera[0].SetWindow(str1, (form.cameraForm as Frm_Cameras1).pictureBoxes[0]);
+                form.cameraManager.listCamera[0].SetWindow(str1, (form.cameraForm as Frm_Cameras1).dpWins[0]);
 
             }
             if (regkey.GetValue("相机数量").ToString() == "2")
             {
-                form.cameraManager.listCamera[0].SetWindow(str1, (form.cameraForm as Frm_Cameras2).pictureBoxes[0]);
-                form.cameraManager.listCamera[1].SetWindow(str2, (form.cameraForm as Frm_Cameras2).pictureBoxes[1]);
+                form.cameraManager.listCamera[0].SetWindow(str1, (form.cameraForm as Frm_Cameras2).dpWins[0]);
+                form.cameraManager.listCamera[1].SetWindow(str2, (form.cameraForm as Frm_Cameras2).dpWins[1]);
 
             }
         }

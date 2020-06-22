@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChoiceTech.Halcon.Control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,15 +13,15 @@ namespace 视觉框架
 {
     public partial class Frm_Cameras2 : Form
     {
-        public List<PictureBox> pictureBoxes;
+        public List<DpWin> dpWins;
         public Frm_Cameras2(Control parent)
         {
             InitializeComponent();
             //CheckForIllegalCrossThreadCalls = false;
 
-            pictureBoxes = new List<PictureBox>();
-            pictureBoxes.Add(pictureBox1);
-            pictureBoxes.Add(pictureBox2);
+            dpWins = new List<DpWin>();
+            dpWins.Add(dpWin1);
+            dpWins.Add(dpWin2);
 
             TopLevel = false;
             Dock = DockStyle.Fill;

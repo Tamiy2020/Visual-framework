@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GxIAPINET;
 using System.Windows.Forms;
+using ChoiceTech.Halcon.Control;
 
 namespace 视觉框架
 {
@@ -60,7 +61,7 @@ namespace 视觉框架
         public bool bIsSnap = false;
 
         [NonSerialized] //不序列化该字段
-        GxBitmap objGxBitmap = null;
+        HalconImage halconImage = null;
 
         [NonSerialized] //不序列化该字段
         CStopWatch objImageTime = new CStopWatch();
@@ -153,11 +154,11 @@ namespace 视觉框架
         /// </summary>
         /// <param name="name"></param>
         /// <param name="pictureBox"></param>
-        public void SetWindow(string name, PictureBox pictureBox)
+        public void SetWindow(string name, DpWin windows)
         {
             if (name == strDisplayName)
             {
-                objGxBitmap = new GxBitmap(objIGXDevice, pictureBox);
+                halconImage = new HalconImage(objIGXDevice, windows);
             }
         }
 
@@ -167,7 +168,7 @@ namespace 视觉框架
         /// <param name="objIFrameData"></param>
         void ImageShowAndSave(IFrameData objIFrameData)
         {
-            objGxBitmap.Show(objIFrameData);
+            halconImage.Show(objIFrameData);
         }
 
 
