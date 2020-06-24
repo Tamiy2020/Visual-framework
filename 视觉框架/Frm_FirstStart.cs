@@ -112,5 +112,14 @@ namespace 视觉框架
         {
             Close();
         }
+
+        private void Frm_FirstStart_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (Registry.CurrentUser.OpenSubKey("Software").OpenSubKey("视觉框架") != null)
+            {
+                e.Cancel = true;
+                MessageBox.Show("您已选择了相机，请配置完成");
+            }
+        }
     }
 }

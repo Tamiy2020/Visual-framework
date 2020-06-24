@@ -22,7 +22,7 @@ namespace 视觉框架
         byte[] m_byMonoBuffer = null;                ///<黑白相机buffer
         DpWin m_dpWin;
 
-        public HalconImage(IGXDevice objIGXDevice,DpWin dpWin)
+        public HalconImage(IGXDevice objIGXDevice, DpWin dpWin)
         {
             m_dpWin = dpWin;
             m_objIGXDevice = objIGXDevice;
@@ -63,7 +63,7 @@ namespace 视觉框架
                     {
                         fixed (byte* p = m_byMonoBuffer)
                         {
-                            HObject image ;
+                            HObject image;
                             HOperatorSet.GenEmptyObj(out image);
                             image.Dispose();
                             HOperatorSet.GenImage1(out image, "byte", nWidth, nHeigh, new IntPtr(p));
