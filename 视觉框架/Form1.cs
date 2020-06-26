@@ -15,7 +15,8 @@ namespace 视觉框架
 {
     public partial class Form1 : Form
     {
-        public CameraManager cameraManager = new CameraManager();
+        // public CameraManager cameraManager = new CameraManager();
+        public HalconCameraManager cameraManager = new HalconCameraManager();
 
         public ExecutionManager executionManager;
 
@@ -55,6 +56,7 @@ namespace 视觉框架
         private void Form1_Load(object sender, EventArgs e)
         {
             executionManager = new ExecutionManager(cameraManager);
+            executionManager.GradAll();
         }
 
         //实时标志
@@ -62,7 +64,7 @@ namespace 视觉框架
         //实时画面
         private void button2_Click(object sender, EventArgs e)
         {
-            if (live)
+            /*if (live)
             {
                 executionManager.LiveAll(live);
                 button1.Enabled = true;
@@ -72,7 +74,7 @@ namespace 视觉框架
                 executionManager.LiveAll(live);
                 button1.Enabled = false;
             }
-            live = !live;
+            live = !live;*/
 
         }
 
@@ -80,13 +82,13 @@ namespace 视觉框架
         private void button1_Click(object sender, EventArgs e)
         {
             executionManager.GradAll();
-            for (int i = 0; i < executionManager.vs.Count; i++)
+           /* for (int i = 0; i < executionManager.vs.Count; i++)
             {
                 textBox1.AppendText($"相机{i + 1}采图时间:" + executionManager.vs[i].ToString() + "ms" + "\r\n");
 
 
             }
-            textBox1.AppendText("============\r\n");
+            textBox1.AppendText("============\r\n");*/
 
         }
     }

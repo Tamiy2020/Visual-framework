@@ -121,6 +121,8 @@
       <DependentUpon>Frm_FirstStart.cs</DependentUpon>
     </Compile>
     <Compile Include="GxBitmap.cs" />
+    <Compile Include="HalconCamera.cs" />
+    <Compile Include="HalconCameraManager.cs" />
     <Compile Include="HalconImage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
